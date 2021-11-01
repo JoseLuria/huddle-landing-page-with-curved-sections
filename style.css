@@ -23,7 +23,6 @@
 }
 
 /* Nav Bar CSS */
-
 .nav{
     padding: 1.5rem;
     width: 100%;
@@ -46,7 +45,6 @@
 }
 
 /* Header CSS */
-
 .header{
     padding: 80px 0;
     text-align: center;
@@ -140,6 +138,10 @@
 
 .section-blue{
     background-color: var(--very-pale-blue);
+}
+
+.main__section__desktop{
+    display: none;
 }
 
 .main__section--img{
@@ -250,4 +252,102 @@
 .fab{
     font-size: 1.8rem;
     padding-right: 10px;
+}
+
+/* Desktop Version*/
+@media only screen  and (min-width : 1224px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Nav Bar CSS */
+    .nav{
+        max-width: 1000px;
+        padding: 50px;
+    }
+
+    .nav__logo{
+        height: 28px;
+    }
+    
+    .nav__button{
+        padding: 5px 20px;
+    }
+
+    /* Header CSS */
+    .header{
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .header__paragraph{
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .button__pink{
+        font-size: 1rem;
+    }
+
+    .header__img{
+        width: 100%;
+        padding: 0 100px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .header__icons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header__icons--big-text{
+        font-size: 4rem;
+    }
+
+    .header__icons--small-text{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .header__icons--communities{
+        height: 38px;
+    }
+
+    .header__icon--messages{
+        height: 30px;
+    }    
+    
+    .main{
+        width: 100%;
+    }
+
+    .main__section__mobile{
+        display: none;
+    }
+
+    .main__section__desktop{
+        display: block;
+    }
+
+    .main__section{
+        padding: 20px 10rem;
+        display: flex;
+    }
+
+    .section-blue>.main__section{
+        flex-direction: row-reverse;
+    }
+
+    .main__section--img{
+        max-width: 50%;
+    }
 }
