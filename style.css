@@ -39,7 +39,7 @@
 .nav__button{
     padding: 5px 15px;
     border-radius: 20px;
-    border: 2px solid var(--light-pink);
+    border: 2px solid var(--pink);
     font-size: 0.8rem;
     background: none;
     color: var(--pink);
